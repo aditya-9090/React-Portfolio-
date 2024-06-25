@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-scroll';
 
 const Home = () => {
   const [showIcons, setShowIcons] = useState(false);
@@ -26,7 +25,7 @@ const Home = () => {
           </button>
           {showIcons && (
             <div className="flex mt-4">
-              {/* Smooth scroll links to footer icons */}
+              {/* Icons for social media */}
               <div className="flex mt-4 md:mt-0">
                 <p className="mr-4">Connect with me on:</p>
                 <a

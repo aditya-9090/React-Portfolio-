@@ -5,9 +5,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import smoothscroll from 'smoothscroll-polyfill';
-// Apply polyfill
-smoothscroll.polyfill();
+
 
 function App() {
   return (

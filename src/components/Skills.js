@@ -26,13 +26,13 @@ const Skills = () => {
     { name: 'Tailwind CSS', logo: 'https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.svg' },
     { name: 'React', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' },
     { name: 'Next.js', logo: 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg' },
-    { name: 'Git', logo: 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg' },
+    { name: 'GitHub', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg' },
     { name: 'C++', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg' },
   ];
 
   // Reorder skills array based on desired order
   const orderedSkills = [
-    'HTML', 'CSS', 'JavaScript', 'Tailwind CSS', 'React', 'Next.js', 'Git', 'C++'
+    'HTML', 'CSS', 'JavaScript', 'Tailwind CSS', 'React', 'Next.js', 'GitHub', 'C++'
   ];
 
   return (
