@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import laptop from "./laptop/laptop.jpeg";
 
 const Home = () => {
   const [showIcons, setShowIcons] = useState(false);
@@ -8,20 +9,24 @@ const Home = () => {
   };
 
   return (
-    <section id="home" className="container mx-auto mt-20 px-6 py-12 bg-gray-900 text-white rounded-lg shadow-lg flex flex-col md:flex-row items-center">
+    <section
+      id="home"
+      className="container mx-auto mt-20 px-6 py-12 bg-gray-900 text-white rounded-lg shadow-lg flex flex-col md:flex-row items-center"
+    >
       <div className="md:w-1/2 flex flex-col justify-center items-center md:items-start md:text-left mb-8 md:mb-0">
         <div className="animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            Hi, Aditya Welcome to My Portfolio
+          <h1 className="text-4xl md:text-4xl font-extrabold mb-4">
+            Hi, Aditya! Welcome to My Portfolio
           </h1>
-          <p className="text-lg md:text-xl leading-relaxed mb-8">
-            I am a passionate web developer showcasing my projects here.
+          <p className="text-lg md:text-xl leading-relaxed mb-8 text-gray-400">
+            I am a passionate web developer showcasing my projects and development skills here.
           </p>
+
           <button
             onClick={handleConnectClick}
             className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md shadow-md transition duration-300 ease-in-out transform hover:scale-105"
           >
-            {showIcons ? 'Close' : "Let's Connect"}
+            {showIcons ? "Close" : "Let's Connect"}
           </button>
           {showIcons && (
             <div className="flex mt-4">
@@ -70,11 +75,11 @@ const Home = () => {
         </div>
       </div>
       <div className="md:w-1/2 flex justify-center md:justify-end">
-        {/* Example online tech image with slow animation */}
+        {/* Example online tech image with simple fade-in animation */}
         <img
-          src="https://via.placeholder.com/600x400"
+          src={laptop}
           alt="Tech Image"
-          className="w-full md:max-w-lg rounded-lg shadow-lg animate-pulse-slow"
+          className="w-full md:max-w-lg rounded-lg shadow-lg animate-fade-in-slow"
         />
       </div>
     </section>

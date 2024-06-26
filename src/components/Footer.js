@@ -3,8 +3,8 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer id='footer' className="bg-gray-800 text-white text-center py-4 mt-8 ring-2 ring-gray-700 ring-opacity-50">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center">
-        <p className="text-sm sm:text-base">&copy; 2024 Your Name. All rights reserved.</p>
+      <div className=" container mx-auto flex flex-col md:flex-row items-center justify-center">
+        <p className="text-sm sm:text-base">&copy; 2024 Portfolio. All rights reserved.</p>
         <div className="flex mt-4 md:mt-0">
           <p className="mr-4">Connect with me on:</p>
           <a

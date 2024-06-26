@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <section id='contact' className="  ring-2 ring-gray-400 ring-opacity-50 container mx-auto mt-8 px-4 py-8 bg-gray-900 text-white rounded-lg shadow-lg">
+    <section id='contact' className="   ring-opacity-50 container mx-auto mt-8 px-4 py-8 bg-gray-900 text-white rounded-lg shadow-lg">
       <h2 className="text-3xl font-bold mb-4">Contact Me</h2>
       <p className="text-lg text-gray-300 mb-4">
         Feel free to reach out to me using the form below or via email at adityapatil9537@gmail.com.
