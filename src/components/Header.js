@@ -41,59 +41,60 @@ const Header = () => {
             </svg>
           </button>
           {/* Mobile Menu Overlay and Content */}
-          {isMobileMenuOpen && (
-            <div className="absolute top-0 right-0 bg-gray-900 w-48 h-screen z-50 flex flex-col items-center py-4">
-              <button onClick={closeMobileMenu} className="text-white absolute top-2 right-2">
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+          <div className={`absolute top-0 right-0 bg-gray-900 w-48 h-screen z-50 flex flex-col items-center py-4
+            ${isMobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}
+            transition duration-300 ease-in-out
+          `}>
+            <button onClick={closeMobileMenu} className="text-white absolute top-2 right-2">
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <ul className="flex flex-col items-center space-y-4">
+              <li>
+                <a
+                  href="#home"
+                  onClick={() => handleSetActiveLink('home')}
+                  className={`text-white hover:text-gray-300 cursor-pointer ${activeLink === 'home' ? 'font-bold' : ''}`}
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-              <ul className="flex flex-col items-center space-y-4">
-                <li>
-                  <a
-                    href="#home"
-                    onClick={() => handleSetActiveLink('home')}
-                    className={`text-white hover:text-gray-300 cursor-pointer ${activeLink === 'home' ? 'font-bold' : ''}`}
-                  >
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#projects"
-                    onClick={() => handleSetActiveLink('projects')}
-                    className={`text-white hover:text-gray-300 cursor-pointer ${activeLink === 'projects' ? 'font-bold' : ''}`}
-                  >
-                    Projects
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#skills"
-                    onClick={() => handleSetActiveLink('skills')}
-                    className={`text-white hover:text-gray-300 cursor-pointer ${activeLink === 'skills' ? 'font-bold' : ''}`}
-                  >
-                    Skills
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#contact"
-                    onClick={() => handleSetActiveLink('contact')}
-                    className={`text-white hover:text-gray-300 cursor-pointer ${activeLink === 'contact' ? 'font-bold' : ''}`}
-                  >
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-          )}
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  onClick={() => handleSetActiveLink('projects')}
+                  className={`text-white hover:text-gray-300 cursor-pointer ${activeLink === 'projects' ? 'font-bold' : ''}`}
+                >
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#skills"
+                  onClick={() => handleSetActiveLink('skills')}
+                  className={`text-white hover:text-gray-300 cursor-pointer ${activeLink === 'skills' ? 'font-bold' : ''}`}
+                >
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  onClick={() => handleSetActiveLink('contact')}
+                  className={`text-white hover:text-gray-300 cursor-pointer ${activeLink === 'contact' ? 'font-bold' : ''}`}
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         {/* Desktop Navigation Links */}
         <nav className="hidden md:block">
